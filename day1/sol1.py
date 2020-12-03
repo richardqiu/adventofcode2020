@@ -1,4 +1,4 @@
-with open('input.txt', 'r') as f:
+with open('input1.txt', 'r') as f:
     nums =  list(map(int, f.read().split()))
 
 s = set()
