@@ -47,7 +47,7 @@ def is_passport_valid(passport):
     # Check byr, iyr, eyr
     for numerical_field, low, high in numerical_fields:
         try:
-            regex = f"(?<={numerical_field}:)[0-9]{{4}}"
+            regex = f"(?<={numerical_field}:)[0-9]+"
             if low <= int(re.search(regex, passport).group()) <= high:
                 pass
             else:
