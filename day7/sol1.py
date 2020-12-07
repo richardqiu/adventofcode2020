@@ -24,8 +24,9 @@ def main():
     stack = ["shiny gold"]
     while stack:
         node = stack.pop()
-        visited.add(node)
-        stack.extend(bag_graph[node])
+        if node not in visited:
+            visited.add(node)
+            stack.extend(bag_graph[node])
 
     print(len(visited) - 1)
 
