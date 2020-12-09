@@ -1,5 +1,5 @@
 # Richard Qiu
-# Advent of Code 2020, Day 8
+# Advent of Code 2020, Day 9
 
 
 def main():
