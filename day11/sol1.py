@@ -29,7 +29,6 @@ def main():
         next_state = np.where(np.logical_or(next_state <= -6, next_state == 0), 1, 0)
         next_state = np.multiply(valid_seats, next_state)
 
-
         if np.array_equal(current_state, next_state):
             return next_state.sum()
         else:
